@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "Trunk Lines",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "BS 32" }, "geometry": { "type": "Point", "coordinates": [ -89.326508212735803, 29.558057141232698 ] } },
+{ "type": "Feature", "properties": { "Name": "BS 2" }, "geometry": { "type": "Point", "coordinates": [ -89.259542511333095, 29.670494423711901 ] } },
+{ "type": "Feature", "properties": { "Name": "Empire Terminal" }, "geometry": { "type": "Point", "coordinates": [ -89.550967025505599, 29.3745219428273 ] } },
+{ "type": "Feature", "properties": { "Name": "Empire Terminal - Breton Sound 2 Platform" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -89.283781, 29.645442 ], [ -89.327006900825097, 29.601603219797202 ], [ -89.381895825250993, 29.546575287883901 ], [ -89.268147, 29.661214 ], [ -89.263695, 29.668568 ] ] ] } }
+]
+}

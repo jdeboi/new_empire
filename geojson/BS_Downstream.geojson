@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "BS Downstream",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "BS downstream to Empire" }, "geometry": { "type": "LineString", "coordinates": [ [ -89.5504175604012, 29.375227084904701 ], [ -89.541945917371905, 29.387165304917101 ], [ -89.504937864776394, 29.401815134852502 ], [ -89.489977249724305, 29.436872004152399 ], [ -89.381914181633107, 29.546600797756 ] ] } },
+{ "type": "Feature", "properties": { "Name": "Bs 18" }, "geometry": { "type": "LineString", "coordinates": [ [ -89.325880591193098, 29.5572398586873 ], [ -89.256927279559207, 29.560012713862299 ] ] } }
+]
+}
