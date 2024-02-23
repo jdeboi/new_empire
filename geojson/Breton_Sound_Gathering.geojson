@@ -1,12 +1,83 @@
 {
-"type": "FeatureCollection",
-"name": "Breton Sound Gathering",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "Name": "Breton Sound" }, "geometry": { "type": "Point", "coordinates": [ -89.613580218666897, 29.628238485785399 ] } },
-{ "type": "Feature", "properties": { "Name": "BS 21" }, "geometry": { "type": "Point", "coordinates": [ -89.113587355811006, 29.575183524986699 ] } },
-{ "type": "Feature", "properties": { "Name": "BS 18" }, "geometry": { "type": "Point", "coordinates": [ -89.256395680572496, 29.559987477912099 ] } },
-{ "type": "Feature", "properties": { "Name": "BS 20" }, "geometry": { "type": "Point", "coordinates": [ -89.103953068062395, 29.4595153894921 ] } },
-{ "type": "Feature", "properties": { "Name": "BS 20" }, "geometry": { "type": "LineString", "coordinates": [ [ -89.117283212324594, 29.578178121942599 ], [ -89.103225400624396, 29.460087000134202 ] ] } }
-]
+    "type": "FeatureCollection",
+    "name": "Breton Sound Gathering",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Breton Sound"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -89.613580218666897,
+                    29.628238485785399
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "BS 21"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -89.113587355811006,
+                    29.575183524986699
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "BS 18"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -89.256395680572496,
+                    29.559987477912099
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "BS 20"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -89.103953068062395,
+                    29.4595153894921
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "BS 20"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -89.117283212324594,
+                        29.578178121942599
+                    ],
+                    [
+                        -89.103225400624396,
+                        29.460087000134202
+                    ]
+                ]
+            }
+        }
+    ]
 }
