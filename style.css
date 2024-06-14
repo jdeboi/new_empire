@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-}
+  }
 
 #map {
     position: absolute;
@@ -9,3 +9,64 @@ body {
     bottom: 0;
     width: 100%;
 }
+
+#map-settings-controls{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    
+}
+
+#map-settings-controls > div {
+    padding: 5px;
+}
+
+
+#legend {
+    position: absolute;
+    width: 150px;
+    bottom: 40px;
+    right: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  }
+  .legend-line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  .legend-color {
+    width: 20px;
+    height: 4px;
+    margin-right: 10px;
+  }
+  .legend-text {
+    font-size: 14px;
+  }
+  .owned { background-color: #2537FF; }
+  .managed { background-color: #FF3C38; }
+  .interest { background-color: #FFF275; }
+  .connecting { background-color: #001D4A; }
+
+
+
+  .empire-marker {
+    background-color: white; /* White background */
+   
+    padding: 5px; /* Add some padding around the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Optional: Add a slight shadow for better visibility */
+  }
+
+  .empire-marker img {
+    width: 24px; /* Set the width of the image */
+    height: 24px; /* Set the height of the image */
+  }
+
+  .cities-marker {
+
+  }
