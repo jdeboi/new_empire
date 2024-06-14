@@ -63,8 +63,8 @@ body {
   }
 
   .empire-marker img {
-    width: 24px; /* Set the width of the image */
-    height: 24px; /* Set the height of the image */
+    width: 60px; /* Set the width of the image */
+    height: 52px; /* Set the height of the image */
   }
 
   .cities-marker {

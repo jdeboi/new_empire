@@ -1,7 +1,13 @@
 const empireLogos = [
   {
     name: "Empire",
+    coords: [-90.0697032, 29.9498281],
+    src: "assets/empire_logo.webp",
+  },
+  {
+    name: "Gibson",
     coords: [-90.93106408, 29.62906012],
+    src: "assets/empire_logo.webp",
   },
 ];
 
@@ -112,10 +118,12 @@ async function fetchGeoJSON(url) {
 }
 
 async function loadDataAndAddLayers() {
-  const augerData = await fetchGeoJSON("geojson2/Auger.geojson");
-  const gibsonData = await fetchGeoJSON("geojson2/Gibson.geojson");
-  const linesData = await fetchAndFilterGeoJSON("mapshaper/lines.json");
-  const pointsData = await fetchAndFilterPointsGeoJSON("mapshaper/points.json");
+  const augerData = await fetchGeoJSON("assets/geojson2/Auger.geojson");
+  const gibsonData = await fetchGeoJSON("assets/geojson2/Gibson.geojson");
+  const linesData = await fetchAndFilterGeoJSON("assets/mapshaper/lines.json");
+  const pointsData = await fetchAndFilterPointsGeoJSON(
+    "assets/mapshaper/points.json"
+  );
 
   map.addSource("auger", {
     type: "geojson",
@@ -204,9 +212,7 @@ async function loadDataAndAddLayers() {
 
     // Create an image element for the marker icon
     const img = document.createElement("img");
-    img.src = "empire_logo.webp"; // Path to your marker image
-    img.style.width = "60px"; // Set the width of the image
-    img.style.height = "60px"; // Set the height of the image
+    img.src = place.src; // Path to your marker image
 
     el.appendChild(img);
 
