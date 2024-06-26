@@ -7,7 +7,7 @@ const empireLogos = [
   {
     name: "Gibson",
     coords: [-90.93106408, 29.62906012],
-    src: "assets/empire_logo.webp",
+    src: "assets/gibson_logo.webp",
   },
 ];
 
@@ -16,10 +16,10 @@ const citiesOfInterest = [
 ];
 
 const palette1 = {
-  owned: "#B00B0C",
+  owned: "#4182BC",
   interest: "#FFA629",
-  managed: "#595859",
-  connecting: "#4182BC",
+  managed: "#B00B0C",
+  connecting: "#595859",
 };
 
 const palette2 = {
