@@ -54,7 +54,7 @@ mapboxgl.accessToken =
 
 const map = new mapboxgl.Map({
   container: "map",
-  style: "mapbox://styles/jdeboi/clxazw5aw09d201ql0vyj7fyk",
+  style: "mapbox://styles/jdeboi/clxwdfwei04pd01qo5hvm9rs7",
   center: [-90.5, 28.9],
   zoom: 7,
   maxZoom: 12, // Set the maximum zoom level
