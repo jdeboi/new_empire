@@ -68,6 +68,8 @@ const map = new mapboxgl.Map({
   dragRotate: false, // Disable map rotation when dragging
 });
 
+let markers = [];
+
 async function fetchAndFilterPointsGeoJSON(url) {
   const response = await fetch(url);
   const geoJson = await response.json();
@@ -210,6 +212,12 @@ async function loadDataAndAddLayers() {
     },
   });
 
+  addMarkers();
+}
+
+function addMarkers() {
+  removeMarkers();
+
   empireLogos.forEach((place) => {
     const el = document.createElement("div");
     el.className = place.classN;
@@ -227,12 +235,17 @@ async function loadDataAndAddLayers() {
     }
 
     // Append the image and label to the marker element
-
     el.appendChild(img);
 
     // Add the custom marker to the map
-    new mapboxgl.Marker(el).setLngLat(place.coords).addTo(map);
+    const marker = new mapboxgl.Marker(el).setLngLat(place.coords).addTo(map);
+    markers.push(marker);
   });
+}
+
+function removeMarkers() {
+  markers.forEach((marker) => marker.remove());
+  markers = [];
 }
 
 map.on("load", loadDataAndAddLayers);
