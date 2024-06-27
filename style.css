@@ -67,11 +67,26 @@ body {
     height: 52px; /* Set the height of the image */
   }
 
+  .gibson-marker {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
   .gibson-marker img {
     width: 40px; /* Set the width of the image */
     height: 40px; /* Set the height of the image */
   }
 
-  .cities-marker {
-
+  .marker-label {
+    position: absolute;
+    top: 100%; /* Position below the image */
+    left: 50%; /* Position centered horizontally */
+    transform: translate(-50%, 4px); /* Adjust the offset */
+    padding: 2px 5px; /* Optional: Add some padding */
+    font-size: 12px; /* Adjust the font size */
+    white-space: nowrap; /* Prevent the text from wrapping */
+    border-radius: 3px; /* Optional: Add rounded corners */
+    text-align: center; /* Center-align the text */
   }
