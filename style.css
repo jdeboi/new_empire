@@ -52,7 +52,7 @@ body {
 
 
 
-  .empire-marker {
+  .location-marker {
     background-color: white; /* White background */
    
     padding: 5px; /* Add some padding around the image */
@@ -65,6 +65,11 @@ body {
   .empire-marker img {
     width: 60px; /* Set the width of the image */
     height: 52px; /* Set the height of the image */
+  }
+
+  .gibson-marker img {
+    width: 40px; /* Set the width of the image */
+    height: 40px; /* Set the height of the image */
   }
 
   .cities-marker {

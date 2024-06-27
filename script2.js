@@ -1,13 +1,15 @@
 const empireLogos = [
   {
     name: "Empire",
+    classN: "location-marker empire-marker",
     coords: [-90.0697032, 29.9498281],
     src: "assets/empire_logo.webp",
   },
   {
-    name: "Gibson",
+    name: "Gibson Terminal",
+    classN: "gibson-marker",
     coords: [-90.93106408, 29.62906012],
-    src: "assets/gibson_logo.webp",
+    src: "assets/oiltank_white.png",
   },
 ];
 
@@ -208,7 +210,7 @@ async function loadDataAndAddLayers() {
 
   empireLogos.forEach((place) => {
     const el = document.createElement("div");
-    el.className = "empire-marker";
+    el.className = place.classN;
 
     // Create an image element for the marker icon
     const img = document.createElement("img");
